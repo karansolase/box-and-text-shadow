@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container
+    {
+        display:flex;
+    }
+    .card
+    {
+        padding: 23px 12px;
+        border: 2px solid red;
+        margin: 23px 12px;
+    background-color: aqua;
+    /* Syntax of Box shadow: offset-x offset-y blur-radius spread-radius color */
+    /* This helps for downside shadow  */
+    /* 10px is a blur radius make it increase and decrease to know its meaning */
+    /* 34 px is spread box shadow applies for all the four sides */
+    /* rgba is used to set the color and last value alpha which 0.5 is used to manage the darkness of it*/
+    /* box-shadow: 16px 14px 10px 34px rgba(236, 20, 20, 0.5);  */
+    /* This helps for upside shadow  */
+    /* box-shadow: -16px -14px 10px green; */
+    /* box-shadow:inset 3px 5px greenyellow; */
+    /* You can also applies multiple shadow as shown in below type*/
+    box-shadow: 3px 5px green, 4px 6px red, 6px 10px yellow;
+    }
+    #car-1 h2
+    {
+        /* same if you make negatives the below value shadow will moves upside  */
+text-shadow:3px 4px 2px rgba(5, 5, 5, 0.5);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+           <h2>This is C++ Course</h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem necessitatibus deserunt possimus in, architecto voluptates repudiandae sit natus obcaecati, nihil earum ipsam incidunt! Libero facere quis illum minus vel sunt</p>
+        </div>
+        <div class="card" id="car-2">
+          <h2>This is Web Designing Course</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis ex facilis at nesciunt, omnis tempora ut quod corporis! Dignissimos deserunt nulla magnam ex sequi itaque doloremque? Maiores, inventore explicabo.
+        </div>
+        <div class="card" id="car-3">
+           <h2>This is DSA Course</h2>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis ex facilis at nesciunt, omnis tempora ut quod corporis! Dignissimos deserunt nulla magnam ex sequi itaque doloremque? Maiores, inventore explicabo.
+        </div>
+    </div>
+</body>
+</html>
